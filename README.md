@@ -30,3 +30,14 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Downloading the Euromillions dataset
+
+`scripts/download_dataset.py` fetches the [Euromillions historical data](https://www.kaggle.com/datasets/duartepereiradacruz/euromillions-historical-data) dataset from Kaggle via `kagglehub`.
+
+```bash
+pip install -r scripts/requirements.txt
+python scripts/download_dataset.py
+```
+
+This requires a Kaggle account with API credentials configured (see the [kagglehub docs](https://github.com/Kaggle/kagglehub)).
